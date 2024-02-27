@@ -75,7 +75,7 @@ kalkulator();
 
 // OPPGAVE 4
 
-
+/*
 function generateRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -95,3 +95,96 @@ function generateRandomBetween() {
 }
 
 generateRandomBetween();
+
+*/
+
+
+/* 
+
+// OPPGAVE 5
+
+function Sortering() {
+  var tallListe = [];
+ 
+  for (var i = 1; i <= 5; i++) {
+    var tall = parseFloat(prompt("Skriv inn tall " + i));
+    tallListe.push(tall);
+  }
+ 
+  tallListe.sort(function (a, b) {
+    return a - b;
+  });
+ 
+  alert(
+    "Sorterte tall fra minste til største: " + tallListe.join(", ")
+  );
+}
+ 
+Sortering();
+*/
+ 
+/*Oppgave 6 - utfordring
+function RoykenPrint() {
+    let resultat = '';
+    for (let i = 0; i < 9; i++) {
+        if (i % 3 === 0) {
+            resultat += '<div class="rad">';
+        }
+        resultat += '<div class="boks">Røyken VGS</div>';
+        if ((i + 1) % 3 === 0) {
+            resultat += '</div>';
+        }
+    }
+    document.body.innerHTML = resultat;
+}
+RoykenPrint();
+*/
+ 
+/*
+
+// OPPGAVE 7
+
+function finnStørsteTall() {
+  var tall1 = parseFloat(prompt("Skriv inn det første tallet:"));
+  var tall2 = parseFloat(prompt("Skriv inn det andre tallet:"));
+  var tall3 = parseFloat(prompt("Skriv inn det tredje tallet:"));
+ 
+  if (isNaN(tall1) || isNaN(tall2) || isNaN(tall3)) {
+    alert("Vennligst skriv inn gyldige tall.");
+    return;
+  }
+ 
+  var størsteTall = Math.max(tall1, tall2, tall3);
+ 
+  alert("Det største tallet er " + størsteTall);
+}
+ 
+finnStørsteTall();
+*/
+ 
+/*
+
+// OPPGAVE 8
+function utførProsessen() {
+  var startTall = parseInt(prompt("Skriv inn et heltall:"));
+ 
+  if (isNaN(startTall) || !Number.isInteger(startTall)) {
+    alert("Vennligst skriv inn et gyldig heltall.");
+    return;
+  }
+ 
+  alert(startTall);
+ 
+  while (startTall !== 1) {
+    if (startTall % 2 === 0) {
+      startTall = startTall / 2;
+    } else {
+      startTall = 3 * startTall + 1;
+    }
+ 
+    alert(startTall);
+  }
+}
+ 
+utførProsessen();
+*/
